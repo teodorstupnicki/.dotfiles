@@ -3,6 +3,8 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export VISUAL=nvim
+export EDITOR=nvim
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -37,6 +39,8 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
 
+# Load LS_COLORS from configuration file
+eval "$(dircolors ~/.dircolors)"
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
@@ -79,6 +83,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+bindkey '^k' autosuggest-accept
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
