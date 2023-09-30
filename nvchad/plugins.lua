@@ -61,6 +61,20 @@ local plugins = {
     }
   },
 
+  {
+   "nvim-telescope/telescope.nvim",
+   opts = {
+     defaults = {
+       mappings = {
+         i = {
+           ["<esc>"] = function(...)
+               require("telescope.actions").close(...)
+            end,
+          },
+        },
+      },
+    },
+   },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
