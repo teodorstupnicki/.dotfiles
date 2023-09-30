@@ -64,7 +64,13 @@ local plugins = {
   {
    "nvim-telescope/telescope.nvim",
    opts = {
-     defaults = {
+      pickers = {
+        find_files = {
+          hidden = true,
+          follow = true,
+        }
+      },
+      defaults = {
        mappings = {
          i = {
            ["<esc>"] = function(...)
