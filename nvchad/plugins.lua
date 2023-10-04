@@ -71,6 +71,7 @@ local plugins = {
         }
       },
       defaults = {
+       file_ignore_patterns = { "node_modules", "targets" },
        mappings = {
          i = {
            ["<esc>"] = function(...)
