@@ -31,6 +31,7 @@ local plugins = {
         "rust-analyzer",
         "typescript-language-server",
         "eslint-lsp",
+        "pyright",
       },
     },
   },
