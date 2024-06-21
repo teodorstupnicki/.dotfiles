@@ -1,0 +1,7 @@
+[user]
+	email = teodor.stupnicki@gmail.com
+	name = teodorstupnicki
+
+[alias]
+  st = status
+  cm = commit -m
