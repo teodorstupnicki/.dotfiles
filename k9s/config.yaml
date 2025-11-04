@@ -1,0 +1,46 @@
+k9s:
+  # Refresh rate for resource updates (in seconds)
+  refreshRate: 2
+  
+  # Maximum number of concurrent connections
+  maxConnections: 20
+  
+  # Enable read-only mode (prevents modifications)
+  readOnly: false
+  
+  # UI settings
+  ui:
+    enableMouse: true
+    headless: false
+    logoless: false
+    noIcons: false
+    skipLatestRevCheck: false
+  
+  # Logger settings
+  logger:
+    tail: 100
+    buffer: 5000
+    sinceSeconds: -1
+    fullScreen: false
+    textWrap: false
+    showTime: false
+  
+  # Resource threshold settings
+  thresholds:
+    cpu:
+      critical: 90
+      warn: 70
+    memory:
+      critical: 90
+      warn: 70
+  
+  # Default namespace view
+  defaultView: "v1/pods"
+  
+  # Enable/disable features
+  enableImages: true
+  enablePrinter: false
+  
+  # Skip for login
+  skipLatestRevCheck: false
+
