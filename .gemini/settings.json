@@ -1,0 +1,24 @@
+{
+  "default_model": "gemini-pro",
+  "generation_settings": {
+    "temperature": 0.5,
+    "max_output_tokens": 3072
+  },
+  "code_generation": {
+    "indentation_style": "  "
+  },
+  "project_context": {
+    "system_instruction": "You are an expert pair programmer. Your goal is to provide clean, efficient, and well-documented code. Default to the most common and idiomatic conventions for the language you are writing."
+  },
+  "ignore_patterns": [
+    "node_modules/",
+    "dist/",
+    "build/",
+    ".venv/",
+    "*.pyc",
+    "*.log",
+    ".git/",
+    "package-lock.json",
+    "yarn.lock"
+  ]
+}
